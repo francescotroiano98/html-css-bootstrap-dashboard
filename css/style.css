@@ -8,12 +8,17 @@ form{
     width: 50px;
 }
 .nav-container{
-    width: 200px;
+    width: 150px;
     height: calc(100vh - 70px);
     background-color: darkblue;
 }
 .main-container{
-    width: calc(100vw - 200px);
+    width: calc(100vw - 150px);
     height: calc(100vh - 70px);
     background-color: crimson;
+}
+li{
+    list-style: none;
+    color: white;
+    
 }
