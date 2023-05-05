@@ -9,12 +9,12 @@ form{
 }
 
 .nav-container{
-    width: 150px;
+    width: 70px;
     height: calc(100vh - 70px);
     background-color: darkblue;
 }
 .main-container{
-    width: calc(100vw - 150px);
+    width: calc(100vw - 70px);
     height: calc(100vh - 70px);
     background-color: crimson;
 }
@@ -22,4 +22,18 @@ li{
     list-style: none;
     color: white;
     
+}
+
+
+
+@media screen and (min-width: 992px) {
+    
+    section .nav-container{
+        width: 150px;
+    }
+    section .main-container{
+        width: calc(100vw - 150px);
+    }
+
+
 }
