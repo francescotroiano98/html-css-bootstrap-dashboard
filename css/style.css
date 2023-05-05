@@ -23,7 +23,13 @@ li{
     color: white;
     
 }
-
+.contenuto{
+    height: 100px;
+    width: calc((100% / 3) - 2 * 1em);
+    margin-left:1em;
+    margin-right: 1em;
+    background-color: darkgreen;
+}
 
 
 @media screen and (min-width: 992px) {
