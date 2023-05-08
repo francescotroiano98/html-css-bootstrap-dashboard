@@ -45,6 +45,11 @@ li{
     justify-content: center;
     align-items: center;
 }
+@media screen and (min-width: 0px) {
+    #offcanvasRight{
+        width: 100%;
+    }
+}
 @media screen and (min-width: 576px) {
     .contenuto-1{
         order: 3;
