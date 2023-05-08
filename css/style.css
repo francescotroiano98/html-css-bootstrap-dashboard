@@ -1,5 +1,5 @@
 header{
-    height: 70px;
+    height: 50px;
 }
 form{
     width: 90%;
@@ -18,27 +18,32 @@ form{
 }
 .nav-container{
     width: 70px;
-    height: calc(100vh - 70px);
-    background-color: darkblue;
+    height: calc(100vh - 50px);
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051e34;
 }
 .main-container{
     width: calc(100vw - 70px);
-    height: calc(100vh - 70px);
-    background-color: crimson;
+    height: calc(100vh - 50px);
 }
 li{
     list-style: none;
     color: white;
     
 }
-
-.contenuto-2{
-    min-width: 256px;
+.classe{
+    width: 25px; 
+    height: 25px; 
+    border-radius: 20px; 
+    background-color: rgb(255, 128, 0);
 }
 
+tbody{
+    font-size: small;
+}
 .my_button{
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,6 +56,26 @@ li{
   
     margin-right: 3px;
     border: none;
+}
+button i .plus:hover{
+    
+    color: black;
+
+}
+ul li:hover{
+    background-color: rgba(209, 209, 209, 0.6);
+}
+.little-square{
+    display: none;
+    top: 25px;
+    left: -125px;
+    background-color: rgb(227, 227, 227);
+    padding: 9px;
+    width: 147px;
+}
+a i .fa-bell:active .little-square{
+    display: block;
+
 }
 @media screen and (min-width: 0px) {
     #offcanvasRight{
@@ -78,7 +103,12 @@ li{
         width: 100%;
     }
 }
+@media screen and (min-width: 768px) {
+    .contenuto-2{
+        min-width: 406px;
+    }
 
+}
 @media screen and (min-width: 992px) {
     
     section .nav-container{

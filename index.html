@@ -42,11 +42,19 @@
                     </form>
                     <div class="d-flex">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <i class="fa-solid fa-bars mx-3" style="color: #5e6064;"></i>
-                            <i class="fa-sharp fa-solid fa-circle-question mx-3" style="color: #5e6064;"></i>
-                            <i class="fa-solid fa-ellipsis-vertical mx-3" style="color: #5e6064;"></i>
+                            <a href="#"><i class="fa-solid fa-bars mx-3" style="color: #5e6064;"></i></a>
+                           <a href="#"><i class="fa-sharp fa-solid fa-circle-question mx-3" style="color: #5e6064;"></i></a>
+                            <a href="#"><i class="fa-solid fa-ellipsis-vertical mx-3" style="color: #5e6064;"></i></a>
                         </div>
-                        <i class="fa-solid fa-bell mx-3" style="color: #f49b1f;"></i>
+                         <div class="position-relative">   
+                            <a href="#"><i class="fa-solid fa-bell mx-3" style="color: #f49b1f;"></i></a>
+                            <div class="little-square rounded-3 position-absolute">
+                                <p class="mb-0">Profilo</p>
+                                <p class="mb-0">Fatturazione</p>
+                                <p class="mb-0">Logout</p>
+                             </div>
+                         </div>
+                           
                     </div>
 
                 
@@ -58,15 +66,15 @@
         <section class="d-flex">
             <section class="nav-container py-2">
                 <nav class="d-flex flex-column justify-content-between align-items-center h-100">
-                    <ul class="ps-0">
-                        <li><i class="fa-solid fa-house me-lg-2" style="color: #ffffff;"></i><span class=" d-none d-lg-inline-block">asfgadg</span></li>
-                        <li><i class="fa-solid fa-house me-lg-2" style="color: #ffffff;"></i><span class=" d-none d-lg-inline-block">asfgadg</span></li>
-                        <li><i class="fa-solid fa-house me-lg-2" style="color: #ffffff;"></i><span class=" d-none d-lg-inline-block">asfgadg</span></li>
+                    <ul class="w-75 ps-0">
+                        <li class="d-flex align-items-center justify-content-evenly"><i class="fa-solid fa-house my-2" style="color: #ffffff;"></i><span class=" d-none d-lg-inline-block">Home</span></li>
+                        <li class="d-flex align-items-center justify-content-evenly"><i class="fa-solid fa-chart-simple my-2" style="color: #ffffff;"></i><span class=" d-none d-lg-inline-block" style="margin-right: 5px;">Stats</span></li>
+                        <li class="d-flex align-items-center justify-content-evenly"><i class="fa-solid fa-signal my-2" style="color: #ffffff;"></i><span class=" d-none d-lg-inline-block">Signal</span></li>
 
                     </ul>
-                    <ul  class="ps-0 mb-0">
-                        <li>
-                            <li><i class="fa-solid fa-house me-lg-2" style="color: #ffffff;"></i><span class=" d-none d-lg-inline-block">asfgadg</span></li>
+                    <ul  class="w-75 ps-0 mb-0">
+                        <li  class="d-flex align-items-center justify-content-evenly">
+                            <i class="fa-solid fa-gear my-2" style="color: #ffffff;"></i><span class="d-none d-lg-inline-block ">Admin</span></li>
                         </li>
                     </ul>
                     
@@ -75,11 +83,11 @@
             </section>
             <section class="main-container container-fluid overflow-scroll">
                 <div class="row-top row" style="background-color: #1b72e8;">
-                    <div class="col-12 py-3 d-flex flex-column flex-sm-row justify-content-between">
-                        <div class="contenuto-1 contenuto d-flex p-2">
-                            <span class="text-white me-2">Nuovo Studente</span>
-                            <button class="btn bg-trasparent border-white border-dark my_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                <i class="fa-solid fa-plus" style="color: #ffffff;"></i></i>
+                    <div class="col-12 d-flex flex-column flex-sm-row justify-content-between">
+                        <div class="contenuto-1 mb-3 d-flex" style="margin-right: 80px; margin-top: 20px; min-width: 149px">
+                            <p class="text-white me-2 my-0">Nuovo Studente</p>
+                            <button class="btn-outline-light btn bg-trasparent border-white border-dark my_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <i class="plus fa-solid fa-plus"></i></i>
                               </button>
                               
                               <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="offcanvasRight" aria-labelledby="staticBackdropLabel offcanvasRightLabel">
@@ -163,14 +171,14 @@
                             
                            
                         </div>
-                        <div class="contenuto-2 contenuto  p-2">
+                        <div class="contenuto-2 p-2 ps-0">
                             <div class="d-flex flex-column">
                                 <div class="d-flex align-items-baseline">
                                     <h1 class="text-white">Boolean</h1>
-                                    <button class="ms-2">Piano blaze</button>
+                                    <button class="ms-2" style="min-width: 67px;">Piano blaze</button>
                                 </div>
                                 <div class="d-flex align-items-center">
-                                    <button class=" btn btn-sm">3 app</button>
+                                    <button class=" py-1">3 app</button>
                                     <i class="fa-solid fa-angles-right" style="color: #ffffff;"></i>
                                     <button class="d-md-none"><i class="fa-solid fa-plus" style="color: #ffffff;"></i></button>
                                     <button class="d-none d-md-inline-block">Boolean mobile app</button>
@@ -180,22 +188,22 @@
                                 </div>    
                             </div>    
                         </div>
-                        <div class="contenuto-3 contenuto d-flex flex-column justify-content-center p-2">
-                            <p class="text-white">Studenti online negli ultimi 30 minuti</p>
-                            <p class="text-white fs-5">120</p>
+                        <div class="contenuto-3 d-flex flex-column justify-content-center" style="margin-top: 20px; min-width: 135px;">
+                            <p class="text-white my-0">Studenti online negli ultimi 30 minuti</p>
+                            <p class="text-white py-0 " style="font-size: 2rem;">120</p>
 
                         </div>
                         
 
                     </div>
                 </div>
-                <div class="row">
+                <div class="row pt-3">
                     <div class="col-12 col-lg-8">
                         <div class="card mb-3">
                             <div class="card-header">
-                              Prossime classi
+                             <h2>Prossime classi</h2>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body py-0">
                                 <table class="table table-hover">
                                     <thead>
                                       <tr>
@@ -209,42 +217,98 @@
                                     <tbody>
                                       <tr class="align-middle">
                                         
-                                        <td>Mark</td>
+                                        <td><div class="d-flex"><div class="d-flex classe justify-content-center align-items-center me-2"><i class="fa-solid fa-code" style="color: #ffffff;"></i></div><span>Classe 75</span></div></td>
                                         <td class="d-none d-sm-table-cell text-center my_min-w-103-px">15 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell text-center"> 20%</td>
-                                        <td class="text-center"><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                        <td class="text-center"><button type="button" class="btn btn-success btn-sm px-1 py-0 rounded-3">Done</button></td>
                                         <td class="d-flex justify-content-center"><button class="bg-light border border-dark my_button me-2"><i class="fa-solid fa-pencil" style="color: #8c8c8c;"></i></button><button class="bg-light border border-dark my_button"><i class="fa-solid fa-trash" style="color: #7a7a7a;"></i></button></td>
                                       </tr>
                                       <tr class="align-middle">
                                         
-                                        <td>Mark</td>
-                                        <td class="d-none d-sm-table-cell text-center my_min-w-103-px"> 15 Feb 2021</td>
+                                        <td><div class="d-flex"><div class="d-flex classe justify-content-center align-items-center me-2"><i class="fa-solid fa-code" style="color: #ffffff;"></i></div><span>Classe 76</span></div></td>
+                                        <td class="d-none d-sm-table-cell text-center my_min-w-103-px"> 16 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell text-center"> 20%</td>
-                                        <td class="text-center"><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                        <td class="text-center"><button type="button" class="btn btn-success btn-sm px-1 py-0 rounded-3">Done</button></td>
                                         <td class="d-flex justify-content-center"><button class="bg-light border border-dark my_button me-2"><i class="fa-solid fa-pencil" style="color: #8c8c8c;"></i></button><button class="bg-light border border-dark my_button"><i class="fa-solid fa-trash" style="color: #7a7a7a;"></i></button></td>
                                       </tr>
                                       <tr class="align-middle">
                                         
-                                        <td>Mark</td>
-                                        <td class="d-none d-sm-table-cell text-center my_min-w-103-px"> 15 Feb 2021</td>
+                                        <td><div class="d-flex"><div class="d-flex  classe justify-content-center align-items-center me-2" ><i class="fa-solid fa-code" style="color: #ffffff;"></i></div><span>Classe 77</span></div></td>
+                                        <td class="d-none d-sm-table-cell text-center my_min-w-103-px"> 17 Feb 2021</td>
                                         <td class="d-none d-sm-table-cell text-center"> 20%</td>
-                                        <td class="text-center"><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                        <td class="text-center"><button type="button" class="btn btn-warning btn-sm text-white px-1 py-0 rounded-3">process</button></td>
                                         <td class="d-flex justify-content-center"><button class="bg-light border border-dark my_button me-2"><i class="fa-solid fa-pencil" style="color: #8c8c8c;"></i></button><button class="bg-light border border-dark my_button"><i class="fa-solid fa-trash" style="color: #7a7a7a;"></i></button></td>
                                       </tr>
+                                      <tr class="align-middle">
+                                        
+                                        <td><div class="d-flex"><div class="d-flex classe justify-content-center align-items-center me-2"><i class="fa-solid fa-code" style="color: #ffffff;"></i></div><span>Classe 78</span></div></td>
+                                        <td class="d-none d-sm-table-cell text-center my_min-w-103-px"> 18 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell text-center"> 20%</td>
+                                        <td class="text-center"><button type="button" class="btn btn-success btn-sm px-1 py-0 rounded-3">Done</button></td>
+                                        <td class="d-flex justify-content-center"><button class="bg-light border border-dark my_button me-2"><i class="fa-solid fa-pencil" style="color: #8c8c8c;"></i></button><button class="bg-light border border-dark my_button"><i class="fa-solid fa-trash" style="color: #7a7a7a;"></i></button></td>
+                                      </tr>
+                                      <tr class="align-middle">
+                                        
+                                        <td><div class="d-flex"><div class="classe d-flex justify-content-center align-items-center me-2"><i class="fa-solid fa-code" style="color: #ffffff;"></i></div><span>Classe 79</span></div></td>
+                                        <td class="d-none d-sm-table-cell text-center my_min-w-103-px"> 19 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell text-center"> 20%</td>
+                                        <td class="text-center"><button type="button" class="btn btn-danger btn-sm px-1 py-0 rounded-3">failed</button></td>
+                                        <td class="d-flex justify-content-center"><button class="bg-light border border-dark my_button me-2"><i class="fa-solid fa-pencil" style="color: #8c8c8c;"></i></button><button class="bg-light border border-dark my_button"><i class="fa-solid fa-trash" style="color: #7a7a7a;"></i></button></td>
+                                      </tr>
+                                      <tr class="align-middle">
+                                        
+                                        <td><div class="d-flex"><div class="d-flex classe justify-content-center align-items-center me-2"><i class="fa-solid fa-code" style="color: #ffffff;"></i></div><span>Classe 80</span></div></td>
+                                        <td class="d-none d-sm-table-cell text-center my_min-w-103-px"> 20 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell text-center"> 20%</td>
+                                        <td class="text-center"><button type="button" class="btn btn-success btn-sm px-1 py-0 rounded-3">Done</button></td>
+                                        <td class="d-flex justify-content-center"><button class="bg-light border border-dark my_button me-2"><i class="fa-solid fa-pencil" style="color: #8c8c8c;"></i></button><button class="bg-light border border-dark my_button"><i class="fa-solid fa-trash" style="color: #7a7a7a;"></i></button></td>
+                                      </tr>
+                                      <tr class="align-middle">
+                                        
+                                        <td><div class="d-flex"><div class="d-flex  classe justify-content-center align-items-center me-2"><i class="fa-solid fa-code" style="color: #ffffff;"></i></div><span>Classe 81</span></div></td>
+                                        <td class="d-none d-sm-table-cell text-center my_min-w-103-px"> 21 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell text-center"> 20%</td>
+                                        <td class="text-center"><button type="button" class="btn btn-danger btn-sm px-1 py-0 rounded-3">failed</button></td>
+                                        <td class="d-flex justify-content-center"><button class="bg-light border border-dark my_button me-2"><i class="fa-solid fa-pencil" style="color: #8c8c8c;"></i></button><button class="bg-light border border-dark my_button"><i class="fa-solid fa-trash" style="color: #7a7a7a;"></i></button></td>
+                                      </tr>
+                                        <tr class="align-middle">
+                                        
+                                            <td>
+                                                <div class="d-flex"><div class="d-flex classe justify-content-center align-items-center me-2"><i class="fa-solid fa-code" style="color: #ffffff;"></i></div><span>Classe 82</span></div>
+                                            </td>
+                                            <td class="d-none d-sm-table-cell text-center my_min-w-103-px"> 22 Feb 2021
+
+                                            </td>
+                                            <td class="d-none d-sm-table-cell text-center"> 20%</td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-success btn-sm px-1 py-0 rounded-3">Done
+
+                                                </button>
+                                            </td>
+                                            <td class="d-flex justify-content-center">
+                                                    <button class="bg-light border border-dark my_button me-2">
+                                                        <i class="fa-solid fa-pencil" style="color: #8c8c8c;">
+                                                        </i>
+                                                    </button>
+                                                    <button class="bg-light border border-dark my_button">
+                                                        <i class="fa-solid fa-trash" style="color: #7a7a7a;"></i>
+                                                    </button>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                   </table>
                             </div>
                         </div>
                         <div class="card mb-3">
                             <div class="card-header">
-                              Featured
+                              <h2>F.A.Q.</h2>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body py-0">
                                 <div class="accordion accordion-flush" id="accordionFlushExample">
                                     <div class="accordion-item">
                                       <h2 class="accordion-header" id="flush-headingOne">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                          Accordion Item #1
+                                          Come aggiungere un nuovo studente?
                                         </button>
                                       </h2>
                                       <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -254,7 +318,7 @@
                                     <div class="accordion-item">
                                       <h2 class="accordion-header" id="flush-headingTwo">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                          Accordion Item #2
+                                          Come possso accedere alle informazioni del mio account?
                                         </button>
                                       </h2>
                                       <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -264,7 +328,7 @@
                                     <div class="accordion-item">
                                       <h2 class="accordion-header" id="flush-headingThree">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                          Accordion Item #3
+                                          Posso usare questa dashboard da mobile?
                                         </button>
                                       </h2>
                                       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -279,7 +343,7 @@
                     <div class="col-12 col-lg-4">
                         <div class="card mb-3">
                             <div class="card-header">
-                              Featured
+                              <h2>Todo</h2>
                             </div>
                             <div class="card-body">
                                 <div class="card" style="width: 100%">
@@ -287,19 +351,19 @@
                                       <li class="list-group-item"><div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">
-                                          Default checkbox
+                                          Kickoff nuove classi
                                         </label>
                                       </div></li>
                                       <li class="list-group-item"><div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                                         <label class="form-check-label" for="flexCheckChecked">
-                                          Checked checkbox
+                                          Lezione su Bootstrap 5 in classe #75
                                         </label>
                                       </div></li>
                                       <li class="list-group-item"><div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                                         <label class="form-check-label" for="flexCheckChecked">
-                                          Checked checkbox
+                                          Controllare username github studenti
                                         </label>
                                       </div></li>
                                       
@@ -313,17 +377,17 @@
                             <div class="card" style="width:100%">
                                 <img src="img/stats.jpeg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title">Utenti attivi</h5>
+                                  <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">An item</li>
-                                  <li class="list-group-item">A second item</li>
-                                  <li class="list-group-item">A third item</li>
+                                  <li class="list-group-item">Gennaio: 1200</li>
+                                  <li class="list-group-item">Febbraio: 800</li>
+                                  <li class="list-group-item">Marzo: 1500</li>
                                 </ul>
                                 <div class="card-body">
-                                  <a href="#" class="card-link">Card link</a>
-                                  <a href="#" class="card-link">Another link</a>
+                                  <a href="#" class="card-link">Visualizza il report approfondito</a>
+                                
                                 </div>
                               </div>
                         </div>
