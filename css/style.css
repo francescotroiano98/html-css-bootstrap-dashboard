@@ -31,13 +31,11 @@ li{
     color: white;
     
 }
-.contenuto{
-    height: 100px;
-    width: calc((100% / 3) - 2 * 1em);
-    margin-left:1em;
-    margin-right: 1em;
-    background-color: darkgreen;
+
+.contenuto-2{
+    min-width: 256px;
 }
+
 .my_button{
     width: 35px;
     height: 35px;
@@ -45,12 +43,27 @@ li{
     justify-content: center;
     align-items: center;
 }
+.contenuto-2 button{
+    background-color: rgb(3, 0, 96);
+    color: white;
+    font-size: 11px;
+    border-radius: 20px;
+  
+    margin-right: 3px;
+    border: none;
+}
 @media screen and (min-width: 0px) {
     #offcanvasRight{
         width: 100%;
     }
 }
 @media screen and (min-width: 576px) {
+    .contenuto{
+        width: calc((100% / 3) - 2 * 1em);
+        margin-left:1em;
+        margin-right: 1em;
+    
+    }
     .contenuto-1{
         order: 3;
 
