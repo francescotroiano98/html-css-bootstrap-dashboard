@@ -7,7 +7,15 @@ form{
 .my_w-px-50{
     width: 50px;
 }
-
+.my_w-60{
+    width: 60%;
+}
+.my_w-10{
+    width: 10%;
+}
+.my_min-w-103-px{
+    min-width: 103px;
+}
 .nav-container{
     width: 70px;
     height: calc(100vh - 70px);
