@@ -47,6 +47,7 @@ tbody{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: small;
 }
 .contenuto-2 button{
     background-color: rgb(3, 0, 96);
@@ -62,6 +63,7 @@ button i .plus:hover{
     color: black;
 
 }
+
 ul li:hover{
     background-color: rgba(209, 209, 209, 0.6);
 }
@@ -76,6 +78,10 @@ ul li:hover{
 a i .fa-bell:active .little-square{
     display: block;
 
+}
+button .edit-trash:hover{
+    background-color: gray;
+    color: white;
 }
 @media screen and (min-width: 0px) {
     #offcanvasRight{
